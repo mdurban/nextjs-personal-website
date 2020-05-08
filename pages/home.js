@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <br />
           <div className={styles.heroSubtitle}>
-            So it better be good.
+            <span className={styles.descriptionLeader}> So it better be good.</span>
           </div>
         </div>
       </div>
@@ -61,28 +61,32 @@ export default function Home() {
 
           <div className={styles.projectContainer}>
             <div className={styles.projectDescription}>
+              <div className={styles.projectTitle}>Representatives Finder Website</div>
+              <div className={styles.projectSubTitle}>Website that helps users search for their representatives based on their location. Gives information for city level officials up to federal.</div>
+              <div className={styles.projectSubTitle}><span className={styles.descriptionLeader}>Tech Stack: </span>React, Redux, SASS</div>
+            </div>
+            <div className={styles.projectImages}>
+              <a href='https://luiscarlin.github.io/representatives/' target='_blank'>
+                <img className={styles.workImage} src="/reps.png" alt="Vercel Logo" />
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.projectContainer}>
+            <div className={styles.sideBySideImages}>
+              <img className={styles.singleImage} src="/prototype-1.png" alt="Vercel Logo" />
+              <img className={styles.singleImage} src="/prototype-2.png" alt="Vercel Logo" />
+            </div>
+            <div className={styles.projectDescription}>
               <div className={styles.projectTitle}>Real Estate Auction Prototype</div>
               <div className={styles.projectSubTitle}>Helped develop mobile application prototype that secured first round of funding for real estate startup.</div>
               <div className={styles.projectSubTitle}>The prototype was used by the company to show investors what functions they were planning on developing.</div>
               <div className={styles.projectSubTitle}>It hooked into an in-house cryptocurrency application to allow users to bid on real estate property using digital currency.</div>
               <div className={styles.projectSubTitle}><span className={styles.descriptionLeader}>Tech Stack: </span>React, Redux, MaterialUI, styled components</div>
             </div>
-            <div className={styles.sideBySideImages}>
-              <img className={styles.singleImage} src="/prototype-1.png" alt="Vercel Logo" />
-              <img className={styles.singleImage} src="/prototype-2.png" alt="Vercel Logo" />
-            </div>
           </div>
 
-          <div className={styles.projectContainer}>
-            <div className={styles.projectImages}>
-              <img className={styles.workImage} src="/reps.png" alt="Vercel Logo" />
-            </div>
-            <div className={styles.projectDescription}>
-              <div className={styles.projectTitle}>Representatives Finder Website</div>
-              <div className={styles.projectSubTitle}>Website that helps users search for their representatives based on their location. Gives information for city level officials up to federal.</div>
-              <div className={styles.projectSubTitle}><span className={styles.descriptionLeader}>Tech Stack: </span>React, Redux, SASS</div>
-            </div>
-          </div>
+
         </div>
       </main>
 
