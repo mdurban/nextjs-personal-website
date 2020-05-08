@@ -1,0 +1,122 @@
+.footerHighlight {
+    color: #3E8290;
+    font-weight: bold;
+}
+
+.heroContainer {
+    background-color: #e2e2df;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.heroTitle {
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    line-height: 1.1;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.heroSubtitle {
+    font-size: 1.5rem;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projects {
+    width: 80%;
+}
+
+.projectContainer {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* flex: 1 1 0px; */
+    /* justify-content: flex-start; */
+    /* children need width: 100%? */
+}
+
+.projectContainer:not(:last-child) {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.sideBySideImages {
+    text-align: center;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.workImage {
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+    /* object-fit: cover; */
+}
+
+.singleImage {
+    height: 20rem;
+    width: auto;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.projectImages {
+    width: 50%;
+}
+
+.projectDescription {
+    width: 50%;
+}
+
+.descriptionLeader {
+    font-weight: bold;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projectSubTitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.projectDescription:nth-child(even) {
+    margin-left: 2rem;
+}
+
+.projectDescription:nth-child(odd) {
+    margin-right: 2rem;
+}
+
+/* .projectDescription:nth-child(even) {
+    padding-left: 2rem;
+}
+
+.projectDescription:nth-child(odd) {
+    padding-right: 2rem;
+} */
