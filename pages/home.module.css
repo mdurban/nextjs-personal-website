@@ -164,12 +164,15 @@
     .projectDescription:nth-child(odd) {
         margin-right: 0;
     }
+    .projectImages {
+        width: 100%
+    }
     .sideBySideImages {
         width: 100%;
         justify-content: flex-start;
     }
     .workImage {
         height: 17rem;
-        width: auto;
+        max-width: 100%;
     }
 }
