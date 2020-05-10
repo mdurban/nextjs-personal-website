@@ -64,7 +64,7 @@ export default function Home() {
             </div>
             <div className={styles.projectImages}>
               <a href='https://luiscarlin.github.io/representatives/' target='_blank'>
-                <img className={styles.workImage} src="/reps.png" alt="Vercel Logo" />
+                <img className={styles.workImage} src="/fetch-my-reps.png" alt="Vercel Logo" />
               </a>
             </div>
           </div>
