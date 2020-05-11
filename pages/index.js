@@ -10,18 +10,23 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
       <div className={styles.heroContainer}>
-        <div className={styles.heroText}>
-          <h1 className={styles.heroTitle}>
-            Michael Urban
+        <div className={styles.headerText}>
+          <div className={styles.heroText}>
+            <h1 className={styles.heroTitle}>
+              Michael Urban
           </h1>
-          <div className={styles.heroSubtitle}>
-            After robots take over the world, our code will be the last evidence of human existence.
+            <div className={styles.heroSubtitle}>
+              After robots take over the world, our code will be the last evidence of human existence.
           </div>
-          <br />
-          <div className={styles.heroSubtitle}>
-            <span className={styles.descriptionLeader}> So it better be good.</span><span className={styles.blinkingCursor}>|</span>
+            <br />
+            <div className={styles.heroSubtitle}>
+              <span className={styles.descriptionLeader}> So it better be good.</span><span className={styles.blinkingCursor}>|</span>
+            </div>
           </div>
         </div>
+        <img className={styles.headerImage} src='/robot-friends.jpg'></img>
+
+
       </div>
 
       <main className={styles.mainContainer}>
@@ -111,6 +116,7 @@ export default function Home() {
         >
           <div>Website handcrafted by <span className={styles.footerHighlight}>me</span> specifically for <span className={styles.footerHighlight}>you</span>.</div>
           <div>Built using React and Next.js</div>
+          <div>Banner image courtesy of <a href="https://www.freepik.com/free-photos-vectors/technology">freepik</a></div>
           <div>
             Find my code on <a className={styles.iconLink} href='https://www.github.com/mdurban' target='_blank'><img src="/github-logo.png" alt="Github Logo" className="logo" /></a>
           </div>

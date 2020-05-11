@@ -3,28 +3,22 @@
     font-weight: bold;
 }
 
-.heroContainer {
-    height: 100vh;
-    width: 100%;
-    display: block;
-    position: relative;
+.headerImage {
+    height: 25%;
+    width: auto;
 }
 
-.heroContainer::before {
-    content: "";
-    position: relative;
-    background-image: url('/hero.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url('/hero.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+.heroContainer {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.headerText {
+    width: 50%;
 }
 
 .heroTitle {
@@ -38,16 +32,12 @@
 }
 
 .heroText {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-20%, -20%);
     line-height: 1.1;
 }
 
 .heroSubtitle {
     font-size: 1.5rem;
-    width: 50%;
+    width: 80%;
     font-family: 'Space Mono', monospace;
 }
 
@@ -169,17 +159,21 @@
 
 @media only screen and (max-width: 900px) {
     .heroContainer {
-        height: 80vh;
+        flex-direction: column;
+    }
+    .headerImage {
+        margin-top: 2rem;
+    }
+    .headerText {
+        width: 95%;
     }
     .heroTitle {
         text-align: center;
         width: 100%;
+        margin-bottom: 2rem;
+        font-size: 4rem;
     }
     .heroText {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         line-height: 1.1;
     }
     .heroSubtitle {
