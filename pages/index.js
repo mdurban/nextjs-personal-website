@@ -7,29 +7,45 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
       <div className={styles.heroContainer}>
         <div className={styles.heroText}>
           <h1 className={styles.heroTitle}>
             Michael Urban
           </h1>
-          {/* <div className={styles.heroTitle}>Making money easy</div> */}
           <div className={styles.heroSubtitle}>
             After robots take over the world, our code will be the last evidence of human existence.
           </div>
           <br />
           <div className={styles.heroSubtitle}>
-            <span className={styles.descriptionLeader}> So it better be good.</span>
+            <span className={styles.descriptionLeader}> So it better be good.</span><span className={styles.blinkingCursor}>|</span>
           </div>
         </div>
       </div>
 
-      <main>
-        <div>
-          Take a look at some of my work.
+      <main className={styles.mainContainer}>
+        <div className={styles.section}>
+          <div className={styles.sectionHeader}>
+            experience.
+          </div>
+          <div className={styles.experienceContainer}>
+            <div className={styles.jobSection}>
+              <div className={styles.jobDate}>Aug. 2013 - Nov. 2014 // Cisco Systems</div>
+              <div>Software Engineer responsible for contributing to test automation framework for testing company's rack servers</div>
+            </div>
+            <div className={styles.jobSection}>
+              <div className={styles.jobDate}>Nov. 2014 - Present // Pillar Technology (now part of Accenture)</div>
+              <div>Software developer focused on web development and designing user-friendly applications while writing clean, maintainable code.</div>
+              <div>Worked across multiple industries (healthcare, natural resources, retail, science research)</div>
+            </div>
+          </div>
         </div>
-        <div className={styles.projects}>
 
+        <div className={styles.section}>
+          <div className={styles.sectionHeader}>
+            projects.
+          </div>
           <div className={styles.projectContainer}>
             <div className={styles.projectDescription}>
               <div className={styles.projectTitle}>MoneyForNoobs</div>
@@ -105,15 +121,6 @@ export default function Home() {
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
