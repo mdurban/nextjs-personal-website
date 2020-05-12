@@ -1,8 +1,3 @@
-.footerHighlight {
-    color: #3E8290;
-    font-weight: bold;
-}
-
 .headerImage {
     height: 25%;
     width: auto;
@@ -97,8 +92,8 @@
 }
 
 .workImage {
-    height: 20rem;
-    width: auto;
+    width: 100%;
+    height: auto;
     text-align: center;
     padding: 0.25rem;
 }
@@ -157,8 +152,21 @@
     margin-right: 2rem;
 }
 
+.footerLink {
+    display: inline;
+    color: cyan;
+    text-decoration: none;
+    color: #3E8290;
+}
+
+.footerIcon {
+    height: 1rem;
+    width: auto;
+}
+
 @media only screen and (max-width: 900px) {
     .heroContainer {
+        height: 80vh;
         flex-direction: column;
     }
     .headerImage {
@@ -184,10 +192,10 @@
         width: 95%;
     }
     .projectContainer {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .projectContainer:nth-child(even) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .projectDescription {
         width: 100%;
