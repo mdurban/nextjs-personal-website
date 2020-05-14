@@ -1,11 +1,14 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import styles from './home.module.css'
+
+const ExperienceSection = dynamic(() => import('../components/experienceSection'))
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Michael Urban</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
@@ -33,15 +36,7 @@ export default function Home() {
             experience.
           </div>
           <div className={styles.experienceContainer}>
-            <div className={styles.jobSection}>
-              <div className={styles.jobDate}>Aug. 2013 - Nov. 2014 // Cisco Systems</div>
-              <div>Software Engineer responsible for contributing to test automation framework for testing company's rack servers</div>
-            </div>
-            <div className={styles.jobSection}>
-              <div className={styles.jobDate}>Nov. 2014 - Present // Pillar Technology (now part of Accenture)</div>
-              <div>Software developer focused on web development and designing user-friendly applications while writing clean, maintainable code.</div>
-              <div>Worked across multiple industries (healthcare, natural resources, retail, science research)</div>
-            </div>
+            <ExperienceSection />
           </div>
         </div>
 
@@ -66,12 +61,14 @@ export default function Home() {
 
           <div className={styles.projectContainer}>
             <div className={styles.projectImages}>
-              <img className={styles.workImage} src="/oil-map.png" alt="Vercel Logo" />
+              <a href='https://rubygems.org/gems/rspec-bash/versions/0.1.0' target='_blank'>
+                <img className={styles.workImage} src="/rspec-bash.png" alt="Vercel Logo" />
+              </a>
             </div>
             <div className={styles.projectDescription}>
-              <div className={styles.projectTitle}>Oil Well Efficiency Dashboard</div>
-              <div className={styles.projectSubTitle}>Data visualization dashboard that helps client view status, efficiency and operating cost of gas and oil wells across the country</div>
-              <div className={styles.projectSubTitle}><span className={styles.descriptionLeader}>Tech Stack: </span>React, Redux, MaterialUI</div>
+              <div className={styles.projectTitle}>rspec-bash (Bash Testing Library)</div>
+              <div className={styles.projectSubTitle}>Co-author of rspec-bash, an open-source Ruby gem that provides a framework for unit testing bash code.</div>
+              <div className={styles.projectSubTitle}><span className={styles.descriptionLeader}>Tech Stack: </span>Bash, Ruby</div>
             </div>
           </div>
 

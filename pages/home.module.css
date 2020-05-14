@@ -37,7 +37,6 @@
 }
 
 .sectionHeader {
-    /* font-family: 'Special Elite', cursive; */
     font-family: 'Space Mono', monospace;
     font-size: 2rem;
     padding-top: 2rem;
@@ -62,16 +61,11 @@
 }
 
 .experienceContainer {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .jobSection:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-.jobDate {
-    color: #9a9a9a;
-    color: #808080;
+    margin-bottom: 2rem;
 }
 
 .projectContainer {
