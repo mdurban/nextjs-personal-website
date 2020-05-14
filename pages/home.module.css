@@ -60,6 +60,10 @@
     padding-bottom: 2rem;
 }
 
+.section:not(:last-child) {
+    border-bottom: 1px solid #e2e2e2;
+}
+
 .experienceContainer {
     margin-top: 1rem;
 }
