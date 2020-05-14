@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './experience.module.css'
 
-const Experience = () => (
+const ExperienceSection = () => (
   <>
     <div className={styles.jobSection}>
       <div className={styles.company}>Pillar Technology (now part of Accenture)</div>
@@ -38,4 +38,4 @@ const Experience = () => (
   </>
 )
 
-export default Experience
+export default ExperienceSection

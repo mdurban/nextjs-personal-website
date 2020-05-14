@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import styles from './home.module.css'
-import Experience from '../components/experience';
+
+const ExperienceSection = dynamic(() => import('../components/experienceSection'))
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
             experience.
           </div>
           <div className={styles.experienceContainer}>
-            <Experience />
+            <ExperienceSection />
           </div>
         </div>
 
