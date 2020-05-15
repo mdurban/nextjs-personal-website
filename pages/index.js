@@ -5,6 +5,7 @@ import styles from './home.module.css'
 const Hero = dynamic(() => import('../components/hero'))
 const ExperienceSection = dynamic(() => import('../components/experienceSection'))
 const ProjectsSection = dynamic(() => import('../components/projectsSection'))
+const Footer = dynamic(() => import('../components/footer'))
 
 export default function Home() {
   return (
@@ -35,19 +36,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <div
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div>Built with love using React and Next.js</div>
-          <div>Banner image courtesy of <a className={styles.footerLink} href="https://www.freepik.com/free-photos-vectors/technology">freepik</a></div>
-          <div>
-            Find my code on <a href='https://www.github.com/mdurban' target='_blank'><img src="/github-logo.png" alt="Github Logo" className={styles.footerIcon} /></a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         .container {
@@ -55,16 +44,6 @@ export default function Home() {
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #e2e2e2;
-          padding-top: 1rem;
-          display: flex;
           justify-content: center;
           align-items: center;
         }
