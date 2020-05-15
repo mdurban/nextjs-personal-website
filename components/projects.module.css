@@ -1,0 +1,89 @@
+.projectContainer {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.projectContainer:not(:last-child) {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sideBySideImages {
+  text-align: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.workImage {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.singleImage {
+  height: 20rem;
+  width: auto;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.projectImages {
+  width: 50%;
+}
+
+.projectDescription {
+  width: 50%;
+}
+
+.descriptionLeader {
+  font-weight: bold;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projectSubTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectDescription:nth-child(even) {
+  margin-left: 2rem;
+}
+
+.projectDescription:nth-child(odd) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .projectContainer {
+    flex-direction: column-reverse;
+  }
+  .projectContainer:nth-child(even) {
+    flex-direction: column;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .projectDescription:nth-child(even) {
+    margin-left: 0;
+  }
+  .projectDescription:nth-child(odd) {
+    margin-right: 0;
+  }
+  .projectImages {
+    width: 100%
+  }
+  .sideBySideImages {
+    width: 100%;
+    justify-content: center;
+  }
+  .workImage {
+    width: 100%;
+    height: auto;
+  }
+}
