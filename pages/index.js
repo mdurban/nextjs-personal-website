@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import styles from './home.module.css'
 
 const ExperienceSection = dynamic(() => import('../components/experienceSection'))
+const Hero = dynamic(() => import('../components/hero'))
 
 export default function Home() {
   return (
@@ -12,23 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <div className={styles.heroContainer}>
-        <div className={styles.headerText}>
-          <div className={styles.heroText}>
-            <h1 className={styles.heroTitle}>
-              Michael Urban
-          </h1>
-            <div className={styles.heroSubtitle}>
-              After robots take over the world, our code will be the last evidence of human existence.
-          </div>
-            <br />
-            <div className={styles.heroSubtitle}>
-              <span className={styles.descriptionLeader}> So it better be good.</span><span className={styles.blinkingCursor}>|</span>
-            </div>
-          </div>
-        </div>
-        <img className={styles.headerImage} src='/robot-friends.jpg'></img>
-      </div>
+
+      <Hero />
 
       <main className={styles.mainContainer}>
         <div className={styles.section}>
