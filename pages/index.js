@@ -9,7 +9,7 @@ const Footer = dynamic(() => import('../components/footer'))
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.appContainer}>
       <Head>
         <title>Michael Urban</title>
         <link rel="icon" href="/favicon.ico" />
@@ -37,31 +37,6 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          text-decoration: none;
-        }
-
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
 
       <style jsx global>{`
         html,
