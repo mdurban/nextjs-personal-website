@@ -1,140 +1,40 @@
 .sectionHeader {
-    font-family: 'Space Mono', monospace;
-    font-size: 2rem;
-    padding-top: 2rem;
-}
-
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .mainContainer {
-    width: 80%;
-    color: #414141;
+  width: 80%;
+  color: #414141;
 }
 
 .section {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section:not(:last-child) {
-    border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .experienceContainer {
-    margin-top: 1rem;
-}
-
-.jobSection:not(:last-child) {
-    margin-bottom: 2rem;
-}
-
-.projectContainer {
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.projectContainer:not(:last-child) {
-    border-bottom: 1px solid #e2e2e2;
-}
-
-.sideBySideImages {
-    text-align: center;
-    display: flex;
-    width: 50%;
-    justify-content: center;
-}
-
-.workImage {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 0.25rem;
-}
-
-.singleImage {
-    height: 20rem;
-    width: auto;
-    text-align: center;
-    padding: 0.25rem;
-}
-
-.projectImages {
-    width: 50%;
-}
-
-.projectDescription {
-    width: 50%;
-}
-
-.descriptionLeader {
-    font-weight: bold;
-}
-
-.projectTitle {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.projectSubTitle {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.projectDescription:nth-child(even) {
-    margin-left: 2rem;
-}
-
-.projectDescription:nth-child(odd) {
-    margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 .footerLink {
-    display: inline;
-    color: cyan;
-    text-decoration: none;
-    color: #3E8290;
+  display: inline;
+  color: cyan;
+  text-decoration: none;
+  color: #3E8290;
 }
 
 .footerIcon {
-    height: 1rem;
-    width: auto;
+  height: 1rem;
+  width: auto;
 }
 
 @media only screen and (max-width: 900px) {
-    .mainContainer {
-        width: 95%;
-    }
-    .projectContainer {
-        flex-direction: column-reverse;
-    }
-    .projectContainer:nth-child(even) {
-        flex-direction: column;
-    }
-    .projectDescription {
-        width: 100%;
-    }
-    .projectDescription:nth-child(even) {
-        margin-left: 0;
-    }
-    .projectDescription:nth-child(odd) {
-        margin-right: 0;
-    }
-    .projectImages {
-        width: 100%
-    }
-    .sideBySideImages {
-        width: 100%;
-        justify-content: center;
-    }
-    .workImage {
-        width: 100%;
-        height: auto;
-    }
+  .mainContainer {
+    width: 95%;
+  }
 }
