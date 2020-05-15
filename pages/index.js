@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import styles from './home.module.css'
-
-const Hero = dynamic(() => import('../components/hero'))
-const ExperienceSection = dynamic(() => import('../components/experienceSection'))
-const ProjectsSection = dynamic(() => import('../components/projectsSection'))
-const Footer = dynamic(() => import('../components/footer'))
+import Hero from '../components/hero'
+import ExperienceSection from '../components/experienceSection'
+import ProjectsSection from '../components/projectsSection'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
