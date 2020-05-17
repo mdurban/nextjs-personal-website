@@ -37,10 +37,6 @@
   width: 50%;
 }
 
-.descriptionLeader {
-  font-weight: bold;
-}
-
 .projectTitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -49,6 +45,10 @@
 .projectSubTitle {
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.projectTechStack {
+  color: #808080;
 }
 
 .projectDescription:nth-child(even) {
