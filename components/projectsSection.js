@@ -13,7 +13,9 @@ const ProjectsSection = () => (
       </div>
       <div className={styles.projectImages} >
         <a href='https://www.moneyfornoobs.com' target='_blank'>
-          <img className={styles.workImage} src="/mfn-desktop-full.png" alt="Vercel Logo" />
+          <div className={styles.imageOutline}>
+            <img className={styles.workImage} src="/mfn-desktop-full.png" alt="Money For Noobs" />
+          </div>
         </a>
       </div>
     </div>
@@ -21,7 +23,9 @@ const ProjectsSection = () => (
     <div className={styles.projectContainer}>
       <div className={styles.projectImages}>
         <a href='https://rubygems.org/gems/rspec-bash/versions/0.1.0' target='_blank'>
-          <img className={styles.workImage} src="/rspec-bash.png" alt="Vercel Logo" />
+          <div className={styles.imageOutline}>
+            <img className={styles.workImage} src="/rspec-bash.png" alt="rspec-bash" />
+          </div>
         </a>
       </div>
       <div className={styles.projectDescription}>
@@ -39,15 +43,18 @@ const ProjectsSection = () => (
       </div>
       <div className={styles.projectImages}>
         <a href='https://luiscarlin.github.io/representatives/' target='_blank'>
-          <img className={styles.workImage} src="/reps.png" alt="Vercel Logo" />
+          <div className={styles.imageOutline}>
+            <img className={styles.workImage} src="/reps.png" alt="Representatives" />
+          </div>
         </a>
       </div>
     </div>
 
     <div className={styles.projectContainer}>
       <div className={styles.sideBySideImages}>
-        <img className={styles.singleImage} src="/prototype-1.png" alt="Vercel Logo" />
-        <img className={styles.singleImage} src="/prototype-2.png" alt="Vercel Logo" />
+        <div className={styles.imageOutline}>
+          <img className={styles.singleImage} src="/prototype.png" alt="Real Estate" />
+        </div>
       </div>
       <div className={styles.projectDescription}>
         <div className={styles.projectTitle}>Real Estate Auction Prototype</div>
