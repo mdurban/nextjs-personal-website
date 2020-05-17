@@ -3,16 +3,20 @@ import styles from './footer.module.css'
 
 const Footer = () => (
   <footer className={styles.footerContainer}>
-    <div
-      href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <div className={styles.contactContainer}>
+      <a href='https://www.linkedin.com/in/urbanmike/' target='_blank'>
+        <img className={styles.contactImage} src='/linkedIn-logo.png'></img>
+      </a>
+      <a href='mailto:mike.david.urban@gmail.com' target='_blank'>
+        <img className={styles.contactImage} src='/gmail.svg'></img>
+      </a>
+      <a href='https://www.github.com/mdurban' target='_blank'>
+        <img className={styles.contactImage} src='/github-logo-circle.svg'></img>
+      </a>
+    </div>
+    <div className={styles.footerCredits}>
       <div>Built with love using React and Next.js</div>
       <div>Banner image courtesy of <a className={styles.footerLink} href="https://www.freepik.com/free-photos-vectors/technology">freepik</a></div>
-      <div>
-        Find my code on <a href='https://www.github.com/mdurban' target='_blank'><img src="/github-logo.png" alt="Github Logo" className={styles.footerIcon} /></a>
-      </div>
     </div>
   </footer>
 )
