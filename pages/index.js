@@ -25,7 +25,6 @@ export default function Home() {
             <ExperienceSection />
           </div>
         </div>
-
         <div className={styles.section}>
           <div className={styles.sectionHeader}>
             projects.

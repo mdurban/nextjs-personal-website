@@ -30,6 +30,20 @@
   margin-top: 1rem;
 }
 
+.contactContainer {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactImage {
+  height: 4rem;
+  width: auto;
+}
+
 @media only screen and (max-width: 900px) {
   .mainContainer {
     width: 95%;
