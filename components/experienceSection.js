@@ -27,7 +27,6 @@ const ExperienceSection = () => (
         <div className={styles.projectContainer}>
           <div className={styles.jobProjectTitle}>Healthcare</div>
           <div className={styles.jobProjectDescription}>Tech Lead for client’s web application which helps thousands of patients schedule services with their healthcare providers</div>
-          <div className={styles.jobProjectTechnologies}>Tech Stack: JavaScript, React, Redux, Cordova, C#</div>
           <TechStackLabels labels={['JavaScript', 'React', 'Redux', 'Cordova', 'C#']} />
         </div>
         <div className={styles.projectContainer}>
@@ -45,7 +44,6 @@ const ExperienceSection = () => (
         <div className={styles.jobProjectTitle}>Hardware</div>
         <div className={styles.jobProjectDescription}>Wrote libraries and test scripts for automation framework that ran regression tests against rack servers</div>
         <TechStackLabels labels={['Tcl', 'Bash']} />
-
       </div>
     </div>
   </>
