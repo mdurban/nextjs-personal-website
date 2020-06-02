@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './projects.module.css'
-import TechLabel from './techLabel';
 import TechStackLabels from './techStackLables';
 
 const ProjectsSection = () => (
@@ -32,6 +31,8 @@ const ProjectsSection = () => (
       <div className={styles.projectDescription}>
         <div className={styles.projectTitle}>rspec-bash (Bash Testing Library)</div>
         <div className={styles.projectSubTitle}>Co-author of rspec-bash, an open-source Ruby gem that provides a framework for unit testing bash code.</div>
+        <div className={styles.projectSubTitle}>This library allows users to mock shell commands, stub functions and control multiple outputs.</div>
+        <div className={styles.projectSubTitle}>It also provides the user with RSpec matchers as well as multiple custom matchers.</div>
         <TechStackLabels labels={['Bash', 'Ruby']} />
       </div>
     </div>
