@@ -1,0 +1,19 @@
+.techStackHeader {
+  text-decoration: underline;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.projectTechLabel:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.techLabel:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .techLabelContainer {
+    margin-bottom: 2rem;
+  }
+}

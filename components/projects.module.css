@@ -51,10 +51,7 @@
 .projectSubTitle {
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-.projectTechStack {
-  color: #808080;
+  line-height: 1.25;
 }
 
 .projectDescription:nth-child(even) {
